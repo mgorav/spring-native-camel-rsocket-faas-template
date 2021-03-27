@@ -9,4 +9,4 @@ Spring native template with
 
 faas-cli template pull https://github.com/mgorav/spring-native-camel-rsocket-faas-template 
 
-faas-cli new --lang sb-native sb-native
+faas-cli new --lang sb-native-func sb-native

@@ -45,8 +45,8 @@ COPY --from=builder /root/sb-native/target/*.jar app.jar
 
 ENV fprocess="java -jar app.jar"
 ENV mode="http"
-ENV upstream_url="http://127.0.0.1:8081"
+#ENV upstream_url="http://127.0.0.1:8081"
 
-EXPOSE 8081 8888
+EXPOSE 8080 8081 8888
 
 CMD ["./fwatchdog"]

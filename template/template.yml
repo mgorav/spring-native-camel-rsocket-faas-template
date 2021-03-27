@@ -1,2 +1,0 @@
-language: sb-native
-fprocess: 'java -jar app.jar'

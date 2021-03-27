@@ -7,6 +7,6 @@ Spring native template with
 - rsocket
 
 
-faas-cli template pull https://github.com/staal-it/openfaas-csharp-injection-template 
+faas-cli template pull https://github.com/mgorav/spring-native-camel-rsocket-faas-template 
 
-faas-cli new --lang csharp-injection <function name>
+faas-cli new --lang sb-native sb-native

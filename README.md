@@ -3,4 +3,4 @@
 Spring native template with
 - camel
 - spring boot
-- kafka
+- spring camel

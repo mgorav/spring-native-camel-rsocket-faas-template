@@ -1,5 +1,6 @@
 package com.gonnect.faas.nativespringboot;
 
+import function.Handler;
 import function.RequestHandler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,6 @@ public class SpringBootNativeApp {
 
     @Bean
     RequestHandler getHandler() {
-        return new RequestHandler();
+        return new Handler();
     }
 }

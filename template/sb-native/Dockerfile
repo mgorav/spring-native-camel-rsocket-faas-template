@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim as builder
+FROM maven:3.6.3-jdk-11 as builder
 
 
 ENV APP_HOME=/root/sb-native/
@@ -9,11 +9,15 @@ WORKDIR $APP_HOME
 
 COPY ./ .
 
-#RUN cd function \
-#    && mvn clean install \
-#    && cd ../ \
-#    && mvn clean install spring-boot:build-image -DskipTests
-#
+
+RUN addgroup --system app \
+    && adduser --system --ingroup app app
+
+RUN cd function \
+    && mvn clean install \
+    && cd ../ \
+    && mvn clean install -DskipTests
+
 #RUN apk --no-cache add curl \
 #    && echo "Pulling watchdog binary from Github." \
 #    && curl -sSLf https://github.com/openfaas-incubator/of-watchdog/releases/download/0.7.6/of-watchdog > /usr/bin/fwatchdog \

@@ -6,7 +6,7 @@ RUN mkdir -p $APP_HOME/function
 
 WORKDIR $APP_HOME
 
-COPY . .
+COPY .. .
 
 RUN cd function \
     && mvn clean install \

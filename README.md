@@ -1,12 +1,17 @@
-# spring-native-camel-rsocket-faas-template
+# OpenFaas Template for Spring Boot
 
-Spring native template with
-- camel
+This is an OpenFaas template, which provides following environments:
+
 - spring boot
-- spring camel
-- rsocket
+- RSocket
+- jdk 11
+- apache camel
+- apache kafka
+
+Write your business loginc in function, i.e. just provide implementation of RequestHandler. By DI, the implementation
+relayed from the function REST class.
+
+Hence, just code, function - RequestHandler, DO NOT worry about the docker,k8s etc.
 
 
-faas-cli template pull https://github.com/mgorav/spring-native-camel-rsocket-faas-template 
 
-faas-cli new --lang sb-native  sb-native-func

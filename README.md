@@ -13,5 +13,5 @@ relayed to the function from REST class.
 
 Hence, just code, function - RequestHandler, DO NOT worry about the docker,k8s etc.
 
-
+> Using GraalVM or not can be controlled by maven profile
 
